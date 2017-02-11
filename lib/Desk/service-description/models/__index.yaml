@@ -8,6 +8,9 @@ custom_fields:
     extends: parameter
     type: object
     additionalProperties: true
+language:
+    extends: parameter
+    type: string
 date.output:
     extends: parameter
     type: string

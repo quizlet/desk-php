@@ -8,6 +8,7 @@ properties:
     type:          { extends: CaseModel.type }
     labels:        { extends: CaseModel.labels }
     custom_fields: { extends: CaseModel.custom_fields }
+    language:      { extends: CaseModel.language }
     created_at:    { extends: CaseModel.created_at.output }
     updated_at:    { extends: CaseModel.updated_at.output }
     active_at:     { extends: CaseModel.active_at.output }

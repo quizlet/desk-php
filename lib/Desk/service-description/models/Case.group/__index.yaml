@@ -25,6 +25,9 @@ CaseModel.labels:
 CaseModel.custom_fields:
     extends: custom_fields
     description: Hash of values for custom fields
+CaseModel.language:
+    extends: language
+    description: Language of the case
 CaseModel.created_at.output:
     extends: date.output
     description: Time of creation

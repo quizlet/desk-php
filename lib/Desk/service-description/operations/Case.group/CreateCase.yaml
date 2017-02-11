@@ -11,6 +11,7 @@ parameters:
     type:          { extends: CaseModel.type, required: true }
     labels:        { extends: CaseModel.labels }
     custom_fields: { extends: CaseModel.custom_fields }
+    language:      { extends: CaseModel.language }
     created_at:    { extends: CaseModel.created_at.input }
     updated_at:    { extends: CaseModel.updated_at.input }
     active_at:     { extends: CaseModel.active_at.input }
