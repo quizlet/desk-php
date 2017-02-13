@@ -35,6 +35,7 @@ class CreateCaseOperationTest extends CreateOperationTestCase
             'priority' => 4,
             'status' => 'open',
             'labels' => array('Spam', 'Ignore'),
+            'language' => 'en',
             'created_at' => $date,
             'customer_id' => 1,
             'assigned_user_id' => 1,
@@ -139,6 +140,7 @@ class CreateCaseOperationTest extends CreateOperationTestCase
         $this->assertNull($case->get('active_at'));
         $this->assertInstanceOf('DateTime', $case->get('received_at'));
         $this->assertSame(1335994728, $case->get('received_at')->getTimestamp());
+        $this->assertSame('en', $case->get('language'));
     }
 
     /**

@@ -30,6 +30,7 @@ class UpdateCaseOperationTest extends UpdateOperationTestCase
             'subject' => 'Welcome',
             'type' => 'email',
             'status' => 'closed',
+            'language' => 'en',
         );
     }
 
@@ -75,6 +76,7 @@ class UpdateCaseOperationTest extends UpdateOperationTestCase
         $this->assertSame(1335994728, $case->get('updated_at')->getTimestamp());
         $this->assertInstanceOf('DateTime', $case->get('received_at'));
         $this->assertSame(1335994728, $case->get('received_at')->getTimestamp());
+        $this->assertSame('en', $case->get('language'));
     }
 
     /**
